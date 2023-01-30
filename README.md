@@ -1,5 +1,4 @@
 # Kubernetes-demo-application
-See the application source code: [kubernetes-demo-app](https://github.com/vjanz/kubernetes-demo-app)
 
 ## Project structure:
 
