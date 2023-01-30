@@ -41,7 +41,7 @@ http://localhost:8000/api/docs
 
 #### Create a user
 
-```http request
+```
 curl -X 'POST' \
 'http://localhost:8000/users/' \
   -H 'Content-Type: application/json' \
@@ -55,7 +55,7 @@ curl -X 'POST' \
 
 #### Create an item for user
 
-```http request
+```
 curl -X 'POST' \
 'http://0.0.0.0:8000/users/1/items/' \
 -H 'Content-Type: application/json' \
