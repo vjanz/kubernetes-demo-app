@@ -1,4 +1,6 @@
 # Kubernetes-demo-application
+See the application GitOps repository: [kubernetes-demo-gitops](https://github.com/vjanz/kubernetes-demo-gitops)
+
 
 ## Project structure:
 
