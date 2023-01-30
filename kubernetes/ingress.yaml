@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kubernetes-demo-ingress
+  namespace: kubernetes-demo
+  # Add the following annotations to the ingress
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
+spec:
+  # Add tls section
+  tls:
+    - hosts:
+        - "demo.vjanztutorials.tech"
+      secretName: kubernetes-demo-tls
+  ingressClassName: nginx
+  rules:
+    - host: "demo.vjanztutorials.tech"
+      http:
+        paths:
+          - backend:
+              service:
+                name: kubernetes-demo
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
+
