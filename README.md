@@ -39,7 +39,7 @@ docker-compose up -d --build
 
 ### Visit the application:
 
-http://localhost:8000/api/docs
+http://localhost:8000/docs
 
 #### Create a user
 
